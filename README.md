@@ -1,4 +1,5 @@
 # Web Developers and Friends
+![GitHub contributors](https://img.shields.io/github/contributors/wdnf/wdnf.github.io)  
 Welcome to the official website for [Web Developers and Friends](https://www.discord.gg/eTMxcrD).
 
 ## Repo collaboration
