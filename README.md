@@ -2,6 +2,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/wdnf/wdnf.github.io)
 ![Project License](https://img.shields.io/github/license/wdnf/wdnf.github.io)
 ![Discord Status](https://img.shields.io/discord/613018044192653342)
+
 Welcome to the official website for [Web Developers and Friends](https://www.discord.gg/eTMxcrD).
 
 ## Repo collaboration
