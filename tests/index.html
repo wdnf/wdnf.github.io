@@ -25,16 +25,16 @@
         padding-left: 15px;
         padding-right: 15px;
         color: white;
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         /*Idk why I can't control the height but meh the height is ok for now I
         think it has to do with the paragraph soooo yeah.... =)*/
       }
       .linksformat:hover{
         background-color: gray;
         color: white;
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         text-decoration: underline;
         cursor: pointer;
       }
@@ -47,6 +47,33 @@
         padding-bottom: 0px;
         text-decoration: none;
         font-size: 20px;
+    }
+    .footermainholder{
+        display: flex;
+        flex-direction: row;
+        background-color: grey;
+        padding-left: 45px;
+        
+    }
+    .individualcolumnholderthingies{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 15px;
+        padding-left: 15px;
+        color: white;
+        font-family: Arial;
+        padding-bottom: 15px;
+        padding-top: 10px;
+    }
+    .footerlinks{
+        text-decoration: none;
+        color: white;
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+    .footerlinks:hover{
+        text-decoration: underline;
     }
   </style>
 </head>
@@ -80,11 +107,39 @@
     </nav>
   </header>
   <main>
-
+    <br>
+    <br>
   </main>
   <footer>
-      <div>
-          
+      <div class="footermainholder">
+          <div class="individualcolumnholderthingies">
+            <h3>About Us</h3>
+            <a href="" class="footerlinks">Our Discord</a>
+            <a href="" class="footerlinks">Our Mission Statement</a>
+            <!--Note: Put something instead of mission statement-->
+          </div>
+          <div class="individualcolumnholderthingies">
+            <h3>HTML Docs</h3>
+            <a href="" class="footerlinks">HTML Tutorials</a>
+            <a href="" class="footerlinks">HTML References</a>
+          </div>
+          <div class="individualcolumnholderthingies">
+            <h3>CSS Docs</h3>
+            <a href="" class="footerlinks">CSS Tutorials</a>
+            <a href="" class="footerlinks">CSS References</a>
+          </div>
+          <div class="individualcolumnholderthingies">
+            <h3>JavaScript Docs</h3>
+            <a href="" class="footerlinks">JavaScript Tutorials</a>
+            <a href="" class="footerlinks">JavaScript References</a>
+          </div>
+          <div class="individualcolumnholderthingies">
+            <h3>Ads</h3>
+            <a href="" class="footerlinks">Why ads?</a>
+            <a href="" class="footerlinks">Opt-out of ads</a>
+            <!--Note: The ads topic is up for discussion-->
+          </div>
+
       </div>
   </footer>
 </body>
