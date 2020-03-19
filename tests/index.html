@@ -1,146 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Web Developers & Friends">
-	<meta data-react-helmet="true" property="og:title" content="Home">
-	<meta name="theme-color" content="#ffff00">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Web Developers & Friends</title>
-  <style>
-    .headermaincontainer{
-        display: flex;
-        background-color: grey;
-        flex-direction: row;
-        font-family: Arial;
-          
-    }
-    .headerparagraphformat{
-        margin-left: 15px;
-    }
-    .linksformat{
-        background-color: gray;
-        padding-left: 15px;
-        padding-right: 15px;
-        color: white;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        /*Idk why I can't control the height but meh the height is ok for now I
-        think it has to do with the paragraph soooo yeah.... =)*/
+  <head>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Web Developers & Friends">
+    <meta data-react-helmet="true" property="og:title" content="Home">
+    <meta name="theme-color" content="#ffff00">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WDNF - Progress</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
       }
-      .linksformat:hover{
-        background-color: gray;
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      .header__nav {
+        display: flex;
+        flex-direction: row;
+        background-color: grey;
+      }
+
+      .header__nav--link:link,
+      .header__nav--link:visited {
+        font-size: 2rem;
         color: white;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        text-decoration: underline;
+        margin: 1.5rem 5rem;
+        text-decoration: none;
         cursor: pointer;
       }
-    .hyperlinkreformat{
-        background-color: gray;
-        padding-left: 35px;
-        padding-right: 35px;
-        color: white;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    .footermainholder{
+
+      .header__nav--link:hover,
+      .header__nav--link:focus,
+      .header__nav--link:active {
+        text-decoration: underline;
+      }
+
+      .main {
+        padding: 2rem;
+      }
+
+      .footer {
         display: flex;
         flex-direction: row;
         background-color: grey;
-        padding-left: 45px;
-        
-    }
-    .individualcolumnholderthingies{
+        padding: 1.5rem 5rem;    
+      }
+
+      .footer__section {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-right: 15px;
-        padding-left: 15px;
         color: white;
-        font-family: Arial;
-        padding-bottom: 15px;
-        padding-top: 10px;
-    }
-    .footerlinks{
-        text-decoration: none;
-        color: white;
-        padding-bottom: 30px;
-        padding-top: 10px;
-    }
-    .footerlinks:hover{
-        text-decoration: underline;
-    }
-  </style>
-</head>
-<body style="margin: 0px;">
-  <header>
-    <nav>
-        <div>
-            <div class="headermaincontainer">
-                <div class="linksformat"> 
-                <!--<p class="headerparagraphformat">Home</p>-->
-                <a href="" class="hyperlinkreformat">Home</a>
-                </div>
-                <div class="linksformat">
-                <!--<p class="headerparagraphformat">Our Discord</p>-->
-                <a href="" class="hyperlinkreformat">Our Discord</a>
-                </div>
-                <div class="linksformat">
-                    <!--<p class="headerparagraphformat">HTML Docs</p>-->
-                    <a href="" class="hyperlinkreformat">HTML Docs</a>
-                </div>
-                <div class="linksformat">
-                    <!--<p class="headerparagraphformat">CSS Docs</p>-->
-                    <a href="" class="hyperlinkreformat">CSS Docs</a>
-                </div>
-                <div class="linksformat">
-                    <!--<p class="headerparagraphformat">JS Docs</p>-->
-                    <a href="" class="hyperlinkreformat">JS Docs</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-  </header>
-  <main>
-    <br>
-    <br>
-  </main>
-  <footer>
-      <div class="footermainholder">
-          <div class="individualcolumnholderthingies">
-            <h3>About Us</h3>
-            <a href="" class="footerlinks">Our Discord</a>
-            <a href="" class="footerlinks">Our Mission Statement</a>
-            <!--Note: Put something instead of mission statement-->
-          </div>
-          <div class="individualcolumnholderthingies">
-            <h3>HTML Docs</h3>
-            <a href="" class="footerlinks">HTML Tutorials</a>
-            <a href="" class="footerlinks">HTML References</a>
-          </div>
-          <div class="individualcolumnholderthingies">
-            <h3>CSS Docs</h3>
-            <a href="" class="footerlinks">CSS Tutorials</a>
-            <a href="" class="footerlinks">CSS References</a>
-          </div>
-          <div class="individualcolumnholderthingies">
-            <h3>JavaScript Docs</h3>
-            <a href="" class="footerlinks">JavaScript Tutorials</a>
-            <a href="" class="footerlinks">JavaScript References</a>
-          </div>
-          <div class="individualcolumnholderthingies">
-            <h3>Ads</h3>
-            <a href="" class="footerlinks">Why ads?</a>
-            <a href="" class="footerlinks">Opt-out of ads</a>
-            <!--Note: The ads topic is up for discussion-->
-          </div>
+        padding: 1rem 0;
+      }
 
-      </div>
-  </footer>
-</body>
+      .footer__section:not(:last-child) {
+        margin-right: 4rem;
+      }
+
+      .footer__section :not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+      .footer__section--header {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      .footer__link:link,
+      .footer__link:visited {
+        font-size: 1.6rem;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .footer__link:hover,
+      .footer__link:focus,
+      .footer__link:active {
+        text-decoration: underline;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="header__nav"> 
+        <a href class="header__nav--link">Home</a>
+        <a href class="header__nav--link">Our Discord</a>
+        <a href class="header__nav--link">HTML Docs</a>
+        <a href class="header__nav--link">CSS Docs</a>
+        <a href class="header__nav--link">JS Docs</a>
+      </nav>
+    </header>
+    
+    <main class="main">
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__section">
+          <h3 class="footer__section--header">About Us</h3>
+          <a href class="footer__link">Our Discord</a>
+          <a href class="footer__link">Our Mission Statement</a>
+          <!--Note: Put something instead of mission statement-->
+        </div>
+        <div class="footer__section">
+          <h3 class="footer__section--header">HTML Docs</h3>
+          <a href class="footer__link">HTML Tutorials</a>
+          <a href class="footer__link">HTML References</a>
+        </div>
+        <div class="footer__section">
+          <h3 class="footer__section--header">CSS Docs</h3>
+          <a href class="footer__link">CSS Tutorials</a>
+          <a href class="footer__link">CSS References</a>
+        </div>
+        <div class="footer__section">
+          <h3 class="footer__section--header">JavaScript Docs</h3>
+          <a href class="footer__link">JavaScript Tutorials</a>
+          <a href class="footer__link">JavaScript References</a>
+        </div>
+        <div class="footer__section">
+          <h3 class="footer__section--header">Ads</h3>
+          <a href class="footer__link">Why ads?</a>
+          <a href class="footer__link">Opt-out of ads</a>
+          <!--Note: The ads topic is up for discussion-->
+        </div>
+    </footer>
+
+  </body>
 </html>
