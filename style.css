@@ -1,0 +1,164 @@
+/* CSS Libs */
+
+/*
+reset.css by Oliver Petrovič
+https://github.com/OliverPetrovic/css-reset
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html {
+  /* So you will be able to use 1rem as 10px in whole document for any element*/
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Custom CSS */
+:root {
+    /* Color variables */
+
+    --color-positive: #fefefe;
+
+    --color-negative: #121212;
+    --color-negative-transparent: #12121280;
+
+    --color-primary: #f0db4f;
+}
+
+body {
+    background-color: var(--color-negative);
+    color: var(--color-positive);
+    font-size: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: currentColor;
+    display: inline-flex;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    top: 0;
+    width: 100vw;
+    height: 6rem;
+    position: fixed;
+    text-transform: uppercase;
+    padding: 0.5rem 3vw;
+
+    background-color: var(--color-negative-transparent);
+}
+  
+.nav__item {
+    padding: 1rem 2rem;
+    list-style: none;
+    display: flex;
+}
+  
+.nav__item--left {
+    background-color: var(--color-primary);
+    padding: 0.5rem 1.5rem;
+    border-radius: .4rem;
+    margin: 0 1rem;
+
+    margin-right: auto;
+
+    transition: all ease-in-out .2s;
+}
+
+.nav__item--left:hover {
+    margin: 0;
+    margin-right: auto;
+
+    padding: 0.5rem 2.5rem;
+}
+
+.nav__logo {
+    width: 10rem;
+}
+
+header {
+    height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 2rem 5rem;
+
+    background-image: url('assets/images/headerbg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+header > figure {
+    padding: 1rem 5rem;
+    border-radius: .5rem;
+    background-color: var(--color-negative-transparent);
+}
+
+.main {
+    padding: 5rem 1rem;
+    padding-left: 10rem;
+}
+
+.grid {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: minmax(10rem, 18rem);
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    padding: 3rem;
+    grid-gap: 3rem;
+}
+
+.grid:not(:last-child) {
+    margin-bottom: 5rem;
+}
+
+.grid > a > figure {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    transition: all .2s ease-in-out;
+}
+
+.gird > a > figure > figcaption {
+    position: absolute;
+    bottom: 0;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all ease-in-out .2s;
+}
+
+.grid > a > figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.grid > a > figure:hover {
+    transform: scale(1.1);
+}
+
+
+.grid > a > figure:hover figcaption {
+    visibility: visible;
+    opacity: 1;
+}
