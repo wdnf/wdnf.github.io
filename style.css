@@ -47,6 +47,10 @@ a {
     display: inline-flex;
 }
 
+h2 {
+    margin-left: 10rem;
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -56,12 +60,13 @@ a {
     position: fixed;
     text-transform: uppercase;
     padding: 0.5rem 3vw;
+    z-index: 69;
 
     background-color: var(--color-negative-transparent);
 }
   
 .nav__item {
-    padding: 1rem 2rem;
+    padding: 1vw 2vw;
     list-style: none;
     display: flex;
 }
@@ -111,7 +116,6 @@ header > figure {
 
 .main {
     padding: 5rem 1rem;
-    padding-left: 10rem;
 }
 
 .grid {
