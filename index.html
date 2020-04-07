@@ -23,27 +23,42 @@
 
 <body>
     <nav class="nav">
-        <li class="nav__item nav__item--left">
-            <a href="index.html">
-                <img class="nav__logo" src="assets/branding/logo.png" alt="WDNF logo">
-            </a>
-        </li>
-        <li class="nav__item">
-            <a href="https://discord.gg/eTMxcrD">
-                Discuss
-            </a>
-        </li>
-        <li class="nav__item">
-            <a href="https://github.com/wdnf/wdnf-website">
-                Contribute
-            </a>
-        </li>
-        <li class="nav__item">
-            <a href="mailto:opetrovic@protonmail.com">
-                Contact
-            </a>
-        </li>
-      </nav>
+        <div class="nav__relative-container">
+
+            <input type="checkbox" id="nav__toggle-checkbox">
+
+            <div class="nav__logo">
+                WDNF
+            </div>
+
+            <ul class="nav__content">
+                <li class="nav__item">
+                    <a target="_blank" href="https://discord.gg/xEtRXNp">
+                        Discuss
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a target="_blank" href="https://discord.gg/xEtRXNp">
+                        Contribute
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a target="_blank" href="mailto:opetrovic@protonmail.com">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <label class="nav__toggle" for="nav__toggle-checkbox">
+                <div class="nav__toggle-bars">
+                    <hr>
+                    <hr>
+                    <hr>
+                </div>
+            </label>
+
+        </div>
+    </nav>
      <header>
         <figure>
             <h1>Web Developers & Friends</h1>
@@ -52,71 +67,15 @@
      </header>
      <main class="main">
         <h2>Programming languages</h2>
-        <div class="grid">
-            <a href="#">
-                <figure>
-                    <img src="assets/misc/html.png" alt="HTML logo">
-                    <figcaption>HTML - Hyper Text Markup Language</figcaption>
-                </figure>
-            </a>
-            <a href="#">
-                <figure>
-                    <img src="assets/misc/css.png" alt="HTML logo">
-                    <figcaption>CSS - Cascading Style Sheets</figcaption>
-                </figure>
-            </a>
-            <a href="#">
-                <figure>
-                    <img src="assets/misc/javascript.png" alt="JavaScript logo">
-                    <figcaption>JS - JavaScript</figcaption>
-                </figure>
-            </a>
-            <a href="#">
-                <figure>
-                    <img src="assets/misc/nodejs.png" alt="JavaScript logo">
-                    <figcaption>NodeJS</figcaption>
-                </figure>
-            </a>
-            <a href="#">
-                <figure>
-                    <img src="assets/misc/mysql.png" alt="MySQL logo">
-                    <figcaption>MySQL - Structured Query Language</figcaption>
-                </figure>
-            </a>
-            <a href="#">
-                <figure>
-                    <img src="assets/misc/sass.png" alt="JavaScript logo">
-                    <figcaption>SASS - Syntactically Awesome Style Sheets</figcaption>
-                </figure>
-            </a>
+        <div class="phone">
+            <p>There will be simulated ios with programming languages as apps</p>
         </div>
         <h2>Technologies</h2>
-        <div class="grid">
-
-            <a href="#">
-                <figure>
-                    <img src="assets/misc/ws.png" alt="WebSocket logo">
-                    <figcaption>WebSockets</figcaption>
-                </figure>
-            </a>
-
-            <a href="#">
-                <figure>
-                    <img src="assets/misc/ajax.png" alt="WebSocket logo">
-                    <figcaption>AJAX - Asynchronous Javascript And Xml</figcaption>
-                </figure>
-            </a>
-
-            <a href="#">
-                <figure>
-                    <img src="assets/misc/es.png" alt="JavaScript logo">
-                    <figcaption>ES - EcmaScript</figcaption>
-                </figure>
-            </a>
-
+        <div class="phone">
+            <p>There will be simulated ios with web technologies as apps</p>
         </div>
         <h2>Ad</h2>
-        <div class="grid">
+        <div class="ad--horizontal">
                 <!-- Horizontal AD -->
             <ins class="adsbygoogle"
             style="display:block"
