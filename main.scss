@@ -1,0 +1,423 @@
+/* CSS Libs */
+
+/*
+reset.css by Oliver Petrovič
+https://github.com/OliverPetrovic/css-reset
+*/
+
+*,
+*::before,
+*::after
+{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html
+{
+  /* So you will be able to use 1rem as 10px in whole document for any element*/
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Custom CSS */
+:root
+{
+    /* Color variables */
+
+    --color-positive: #fefefe;
+    --color-positive-transparent: #fefefe80;
+
+    --color-negative: #121212;
+    --color-negative-transparent: #12121280;
+
+    --color-primary: #f0db4f;
+    --color-primary-transparent: #f0db4f80;
+}
+
+body
+{
+    background-color: var(--color-negative);
+    color: var(--color-positive);
+    font-size: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+a
+{
+    color: currentColor;
+    display: inline-flex;
+}
+
+h2
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav
+{
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    z-index: 69;
+
+    text-transform: uppercase;
+
+    &__relative-container
+    {
+        position: relative;
+    }
+
+    &__logo
+    {
+        position: absolute;
+
+        top: calc(calc(2rem + 1em) / 2 - 1em / 2);
+        left: 5vw;
+    
+        font-weight: 800;
+    }
+
+    &__content
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    
+        list-style: none;
+        padding-right: 5vw;
+    }
+
+    &__toggle
+    {
+        position: absolute;
+        right: 5vw;
+    
+        top: calc(3rem / 2 - 1rem);
+    
+        cursor: pointer;
+        display: none;
+    }
+
+    &__item
+    {
+        padding: 1rem 3vw;
+    }
+
+    /* NAV CHECKBOX HACK */
+    #nav__toggle-checkbox
+    {
+        display: none;
+
+        &:checked ~ .nav__content {
+            flex-direction: column;
+            visibility: visible;
+        }
+    }
+
+    &__toggle-bars
+    {
+        height: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        & > hr {
+            content: "";
+
+            display: flex;
+        
+            width: 3rem;
+            height: .5rem;
+        
+            background-color: var(--color-primary);
+        }
+    }
+}
+
+@media only screen and (max-width: 37.5em)
+{
+    .nav__toggle 
+    {
+        display: flex;
+    }
+    
+    .nav__content {
+        visibility: hidden;
+        justify-content: center;
+        padding-right: 0;
+    }
+}
+
+
+/* END */
+
+header
+{
+    height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 5vw 10vw;
+
+    background-image: url('assets/images/headerbg.png');
+    background-size: cover;
+    background-position: center;
+
+    & > figure {
+        padding: 2vw 5vw;
+        border-radius: .5rem;
+        background-color: var(--color-negative-transparent);
+    }
+}
+
+
+.main
+{
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid
+{
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: minmax(10rem, 18rem);
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    padding: 3rem;
+    grid-gap: 3rem;
+
+    &:not(:last-child) {
+        margin-bottom: 5rem;
+    }
+
+    & > a > figure {
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+    
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: .5rem;
+        }
+
+        & > figcaption {
+            position: absolute;
+            bottom: 0;
+        
+            visibility: hidden;
+            opacity: 0;
+        
+            transition: all ease-in-out .2s;
+        }
+    }
+}
+
+
+/* IPAD :D */
+
+.device
+{
+    width: 80vw;
+    height: 60vw;
+
+    background-color: #0d0d0d;
+    border: 1.5px solid #959595;
+    border-radius: 4rem;
+    padding: 3rem;
+
+    overflow: hidden;
+
+    display: grid;
+    place-items: center;
+
+    margin: 0 auto;
+
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif; /* APPLE FONT */
+
+    &__screen
+    {
+        background-image: url('assets/images/ipad-bg.jpg');
+        background-size: cover;
+        border: 1px solid #959595;
+        border-radius: 2rem;
+    
+        display: flex;
+        flex-direction: column;
+    
+        width: 100%;
+        height: 100%;
+    
+        overflow: hidden;
+    }
+
+    &__grid
+    {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 3rem;
+        padding: 3rem;
+        height: 80%;
+    }
+
+    /* IPAD - COMPONENTS */
+
+    &__infobar
+    {
+        padding: .1rem 1rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .device__widgets
+    {
+        grid-column: 1 / 4;
+        grid-row: 1 / -1;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .device__dock
+    {
+        background-color: green;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 2rem;
+
+        &-grid {
+            height: 100%;
+
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-auto-columns: 1fr;
+            grid-gap: 3rem;
+            justify-content: center;
+            align-items: center;
+        
+            margin: 0 auto;
+        }
+
+    }
+
+    &__folder {
+        width: 100%;
+        height: 100%;
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-auto-flow: row;
+    }
+
+    &__app {
+        width: 100%;
+        height: 100%;
+    
+        border-radius: .8rem;
+    
+        overflow: hidden;
+
+        & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__time {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 2rem 0;
+
+        & > *:first-child {
+            font-size: 5rem;
+            line-height: 70%;
+        }
+
+    }
+
+    
+    /* WIDGETS */
+
+    .widget
+    {
+        -webkit-backdrop-filter: blur(10rem);
+        backdrop-filter: blur(10rem);
+        background-color: #fafafa80;
+        width: 100%;
+        border-radius: .5rem;
+        max-height: 30%;
+        overflow: hidden;
+
+        padding: 0.5rem;
+
+        display: flex;
+        flex-direction: column;
+
+        &:not(:first-child) {
+            margin-top: 1rem;
+        }
+        
+        &__head
+        {
+            height: 1rem;
+        
+            display: flex;
+        }
+        
+        &__icon {
+            width: 1rem;
+            height: 1rem;
+
+            & > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        
+        &__body {
+            margin: 1rem 0;
+        }
+    }
+
+}
+
+/* END IPAD */
+
+
+/* ADS */
+.ad--horizontal {
+    border: 2px solid #fff;
+    background-image: linear-gradient(45deg, var(--color-negative), var(--color-primary));
+}
