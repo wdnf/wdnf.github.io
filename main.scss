@@ -198,232 +198,42 @@ header
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     padding: 3rem;
     grid-gap: 3rem;
+    
+    align-self: center;
 
     &:not(:last-child) {
         margin-bottom: 5rem;
     }
 
-    & > a > figure {
-        position: relative;
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
 
+    &__image {
         width: 100%;
         height: 100%;
-    
-        transition: all .2s ease-in-out;
+        object-fit: cover;
+
+        border-radius: .4rem;
+
+        z-index: 4;
 
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.05) skew(1deg, 1deg);
         }
 
-        & > img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: .5rem;
-        }
-
-        & > figcaption {
-            position: absolute;
-            bottom: 0;
-        
-            visibility: hidden;
-            opacity: 0;
-        
-            transition: all ease-in-out .2s;
-        }
-    }
-}
-
-
-/* IPAD :D */
-
-.device
-{
-    width: 80vw;
-    height: 60vw;
-
-    background-color: #0d0d0d;
-    border: 1.5px solid #959595;
-    border-radius: 4rem;
-    padding: 3rem;
-
-    overflow: hidden;
-
-    display: grid;
-    place-items: center;
-
-    margin: 0 auto;
-
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif; /* APPLE FONT */
-
-    &__screen
-    {
-        background-image: url('assets/images/ipad-bg.jpg');
-        background-size: cover;
-        border: 1px solid #959595;
-        border-radius: 2rem;
-    
-        display: flex;
-        flex-direction: column;
-    
-        width: 100%;
-        height: 100%;
-    
-        overflow: hidden;
+        transition: all .3s;
     }
 
-    &__grid
-    {
+    &__description {
         display: grid;
-        grid-template-columns: repeat(9, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-gap: 3rem;
-        padding: 3rem;
-        height: 80%;
-    }
+        place-items: center;
 
-    /* IPAD - COMPONENTS */
-
-    &__infobar
-    {
-        padding: .1rem 1rem;
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    &__widgets
-    {
-        grid-column: 1 / 4;
-        grid-row: 1 / -1;
-
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__dock
-    {
-        background-color: green;
-        height: 20%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        padding: 2rem;
-
-        &-grid {
-            height: 100%;
-
-            display: grid;
-            grid-auto-flow: column;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            grid-auto-columns: 1fr;
-            grid-gap: 3rem;
-            justify-content: center;
-            align-items: center;
-        
-            margin: 0 auto;
-        }
-
-    }
-
-    &__folder {
-        width: 100%;
-        height: 100%;
-    
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-auto-flow: row;
-    }
-
-    &__app {
-        width: 100%;
-        height: 100%;
-
-        position: relative;
-
-        
-
-        & > img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-
-            border-radius: .8rem;
-            overflow: hidden;
-        }
-
-        & > span {
-            position: absolute;
-            left: 50%;
-            bottom: -3rem;
-            transform: translate(-50%, -1rem);
-        }
-    }
-
-    &__time {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 2rem 0;
-
-        & > *:first-child {
-            font-size: 5rem;
-            line-height: 70%;
-        }
-
-    }
-
-    
-    /* WIDGETS */
-
-    .widget
-    {
-        -webkit-backdrop-filter: blur(10rem);
-        backdrop-filter: blur(10rem);
-        background-color: #fafafa80;
-        width: 100%;
-        border-radius: .5rem;
-        max-height: 30%;
-        overflow: hidden;
-
-        padding: 0.5rem;
-
-        display: flex;
-        flex-direction: column;
-
-        &:not(:first-child) {
-            margin-top: 1rem;
-        }
-        
-        &__head
-        {
-            height: 1rem;
-        
-            display: flex;
-        }
-        
-        &__icon {
-            width: 1rem;
-            height: 1rem;
-
-            & > img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-        
-        &__body {
-            margin: 1rem 0;
-        }
+        height: 4rem;
     }
 
 }
-
-/* END IPAD */
 
 
 /* ADS */
