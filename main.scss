@@ -180,6 +180,8 @@ header
         border-radius: .5rem;
         background-color: var(--color-negative-transparent);
     }
+
+    
 }
 
 
@@ -208,6 +210,10 @@ header
     &__item {
         display: flex;
         flex-direction: column;
+
+        &--disabled {
+            filter: grayscale(1);
+        }
     }
 
     &__image {
@@ -219,11 +225,16 @@ header
 
         z-index: 4;
 
-        &:hover {
+        
+        /*&:hover {
             transform: scale(1.05) skew(1deg, 1deg);
-        }
+        }*/
 
         transition: all .3s;
+    }
+
+    &__item:not(&__item--disabled) &__image:hover {
+        transform: scale(1.05) skew(1deg, 1deg);
     }
 
     &__description {

@@ -132,15 +132,20 @@ header {
   .grid__item {
     display: flex;
     flex-direction: column; }
+    .grid__item--disabled {
+      filter: grayscale(1); }
   .grid__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: .4rem;
     z-index: 4;
+    /*&:hover {
+            transform: scale(1.05) skew(1deg, 1deg);
+        }*/
     transition: all .3s; }
-    .grid__image:hover {
-      transform: scale(1.05) skew(1deg, 1deg); }
+  .grid__item:not(.grid__item--disabled) .grid__image:hover {
+    transform: scale(1.05) skew(1deg, 1deg); }
   .grid__description {
     display: grid;
     place-items: center;
