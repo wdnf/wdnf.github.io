@@ -42,6 +42,7 @@ body
 {
     background-color: var(--color-negative);
     color: var(--color-positive);
+
     font-size: 1.6rem;
 
     display: flex;
@@ -54,11 +55,29 @@ a
     display: inline-flex;
 }
 
+address
+{
+    margin-left: 1rem;
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    & > ul > li:not(:last-child)::after {
+        content: ",";
+    }
+}
+
+
 h2
 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+
+h4
+{
+    line-height: 3rem;
 }
 
 .nav
@@ -160,28 +179,41 @@ h2
 
 /* END */
 
-header
+.header
 {
-    height: 40vh;
+    height: 15vh;
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 
-    padding: 5vw 10vw;
+    font-size: calc(1vw * 1vh);
 
-    background-image: url('assets/images/headerbg.png');
+    padding: 5vw 5vw;
+
     background-size: cover;
     background-position: center;
 
+    background-color: var(--color-primary);
+    color: var(--color-negative);
+
     & > figure {
-        padding: 2vw 5vw;
-        border-radius: .5rem;
-        background-color: var(--color-negative-transparent);
+        padding: 3vw 7vw;
     }
 
-    
+    &--index {
+        height: 40vh;
+        background-image: url('assets/images/headerbg.png');
+        color: var(--color-positive);
+
+        & > figure {
+            padding: 2vw 5vw;
+            border-radius: .5rem;
+            background-color: var(--color-negative-transparent);
+        }
+    }
+
 }
 
 
@@ -200,6 +232,7 @@ header
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     padding: 3rem;
     grid-gap: 3rem;
+    width: 100%;
     
     align-self: center;
 
@@ -213,6 +246,7 @@ header
 
         &--disabled {
             filter: grayscale(1);
+            cursor: not-allowed;
         }
     }
 
@@ -225,12 +259,11 @@ header
 
         z-index: 4;
 
-        
-        /*&:hover {
-            transform: scale(1.05) skew(1deg, 1deg);
-        }*/
-
         transition: all .3s;
+
+        &--contain {
+            object-fit: contain;
+        }
     }
 
     &__item:not(&__item--disabled) &__image:hover {
@@ -246,6 +279,11 @@ header
 
 }
 
+/*  FOOTER  */
+
+.footer {
+    border-top: 2px dashed var(--color-primary);
+}
 
 /* ADS */
 .ad--horizontal {
