@@ -4,11 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> {{ page.title }} | WDNF.org </title>
+    <title>{{ page.title }} | WDNF</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <meta property="og:title" content="WDNF | References and tutorials for Web Developers" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Web Developers & Friends | wdnf.org">
+    <meta property="og:url" content="http://wdnf.org/" />
+    <meta name="theme-color" content="#f0db4f">
+
+    <meta property="og:image" content="http://revend.org/assets/branding/icon-transparent.png" />
+    <meta property="og:image:secure_url" content="https://revend.org/assets/branding/icon-transparent.png" />
+    <meta property="og:image:type" content="image/png" />
+
+    <meta data-react-helmet="true" property="og:title" content="Web Developers & Friends | References and tutorials for Web Developers">
+    <meta data-react-helmet="true" property="og:description" content="Community-made professional and modern references and tutorials for Web Developers">
+    <meta property="og:determiner" content="the" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:site_name" content="WDNF" />
+    <meta name="twitter:card" content="summary" /> <!-- Not sure about this -->
+
+
+    <script data-ad-client="ca-pub-4551551446273204" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
   </head>
   <body>
+    <nav class="nav">
+        <div class="nav__relative-container">
+
+            <input type="checkbox" id="nav__toggle-checkbox">
+
+            <div class="nav__logo">
+                <a target="_blank" href="./">
+                    WDNF
+                </a>
+            </div>
+
+            <ul class="nav__content">
+
+                <li class="nav__item">
+                    <a target="_blank" href="https://discord.gg/xEtRXNp">
+                        Discuss
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a target="_blank" href="https://discord.gg/xEtRXNp">
+                        Contribute
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a target="_blank" href="mailto:opetrovic@protonmail.com">
+                        Contact
+                    </a>
+                </li>
+                
+            </ul>
+
+            <label class="nav__toggle" for="nav__toggle-checkbox">
+                <div class="nav__toggle-bars">
+                    <hr>
+                    <hr>
+                    <hr>
+                </div>
+            </label>
+
+        </div>
+    </nav>
     <div class="container-lg px-3 my-5 markdown-body">
       {{ content }}
     </div>
