@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }} | WDNF</title>
-    <link rel="stylesheet" href="/style.css">
+    
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
@@ -31,6 +31,7 @@
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
     <nav class="nav">
@@ -75,7 +76,7 @@
         </div>
     </nav>
     <div class="container-lg px-3 my-5 markdown-body">
-      <center> {{ content }} </center>
+      {{ content }}
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
 
