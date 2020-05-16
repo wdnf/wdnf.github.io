@@ -47,6 +47,7 @@ body
 
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 a
@@ -283,6 +284,8 @@ h4
 
 .footer {
     border-top: 2px dashed var(--color-primary);
+    
+    justify-self: flex-end;
 }
 
 /* ADS */
