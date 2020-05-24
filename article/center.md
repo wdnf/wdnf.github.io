@@ -38,4 +38,5 @@
    place-items: center;
  }
  ```
-- Article written by **Oliver#4444**
+Article written by:
+- **Oliver#4444**
