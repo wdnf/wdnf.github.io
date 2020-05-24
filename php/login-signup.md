@@ -12,16 +12,16 @@ Create these files on a web server with at least PHP 5.6 installed:
 
 ## Login form:
 ```html
-&lt;!DOCTYPE html&rt;
-<html&rt;
+&lt;!DOCTYPE html &rt;
+&lt;html&rt;
 &lt;head&rt;
-  &lt;title&rt;Login form</title&rt;
+  &lt;title&rt;Login form&lt;/title&rt;
   &lt;link rel="stylesheet" type="text/css" href="style.css"&rt;
 &lt;/head&rt;
 &lt;body&rt;
   &lt;form method="post" class="usrloginregister" action="login.php"&rt;
   	&lt;div class="input-group"&rt;
-  		&lt;label style="color:black;">Email</label&rt;
+  		&lt;label style="color:black;"&lt;Email&rt;/label&rt;
   		&lt;input type="email" name="email" &rt;
   	&lt;/div&rt;
   	&lt;div class="input-group"&rt;
