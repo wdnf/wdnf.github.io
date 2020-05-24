@@ -38,5 +38,3 @@
    place-items: center;
  }
  ```
-Article written by:
-- **Oliver#4444**
