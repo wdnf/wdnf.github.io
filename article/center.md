@@ -1,4 +1,4 @@
-# Centering a element using CSS
+# Centering an element using CSS
 
  Margin method:
  ```css
