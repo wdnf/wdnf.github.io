@@ -8,7 +8,7 @@ CSS - Cascading Style Sheets will allow you to design your websites.
 ## Articles:
 
 ### Positioning
-[Flexbox](flexbox.html)  
+[Flex](flex.html)  
 [Grid](grid.html)  
 
 ### Borders and outlines
