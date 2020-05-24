@@ -38,5 +38,4 @@
    place-items: center;
  }
  ```
- Hope it helped ;)
-  - Oliver
+- Article written by **Oliver#4444**
