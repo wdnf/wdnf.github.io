@@ -12,13 +12,6 @@ Create these files on a web server with at least PHP 5.6 installed:
 
 ## Login form:
 ```html
-&lt;!DOCTYPE html &rt;
-&lt;html&rt;
-&lt;head&rt;
-  &lt;title&rt;Login form&lt;/title&rt;
-  &lt;link rel="stylesheet" type="text/css" href="style.css"&rt;
-&lt;/head&rt;
-&lt;body&rt;
   &lt;form method="post" class="usrloginregister" action="login.php"&rt;
   	&lt;div class="input-group"&rt;
   		&lt;label style="color:black;"&lt;Email&rt;/label&rt;
@@ -35,5 +28,4 @@ Create these files on a web server with at least PHP 5.6 installed:
   		Not a member? <a href="register.php"&rt;Sign up</a&rt;
   	&lt;/p&rt;
   &lt;/form&rt;
-&lt;/body&rt;
-&lt;/html&rt;```
+```
