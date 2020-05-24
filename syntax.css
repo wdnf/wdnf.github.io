@@ -22,6 +22,12 @@
 .hljs-selector-tag {
 	font-weight: 700
 }
+.hljs-selector-tag { 
+	color: #6b931f;
+}
+.hljs-attribute {
+	color: #be7e1e;
+}
 
 .hljs-deletion,
 .hljs-number,
