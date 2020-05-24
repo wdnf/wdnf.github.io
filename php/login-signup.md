@@ -12,29 +12,28 @@ Create these files on a web server with at least PHP 5.6 installed:
 
 ## Login form:
 ```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Login form</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-  <form method="post" class="usrloginregister" action="login.php">
-  	<?php include('errors.php'); ?>
-  	<div class="input-group">
-  		<label style="color:black;">Email</label>
-  		<input type="email" name="email" >
-  	</div>
-  	<div class="input-group">
-  		<label style="color:black;">Password</label>
-  		<input type="password" name="password">
-  	</div>
-  	<div class="input-group">
-  		<button type="submit" class="btn" name="login_user">Login</button>
-  	</div>
-  	<p style="color:black;">
-  		Not a member? <a href="register.php">Sign up</a>
-  	</p>
-  </form>
-</body>
-</html>```
+&lt;!DOCTYPE html&rt;
+<html&rt;
+&lt;head&rt;
+  &lt;title&rt;Login form</title&rt;
+  &lt;link rel="stylesheet" type="text/css" href="style.css"&rt;
+&lt;/head&rt;
+&lt;body&rt;
+  &lt;form method="post" class="usrloginregister" action="login.php"&rt;
+  	&lt;div class="input-group"&rt;
+  		&lt;label style="color:black;">Email</label&rt;
+  		&lt;input type="email" name="email" &rt;
+  	&lt;/div&rt;
+  	&lt;div class="input-group"&rt;
+  		&lt;label style="color:black;"&rt;Password</label&rt;
+  		&lt;input type="password" name="password"&rt;
+  	&lt;/div&rt;
+  	&lt;div class="input-group"&rt;
+  		&lt;button type="submit" class="btn" name="login_user"&rt;Login</button&rt;
+  	&lt;/div>
+  	&lt;p style="color:black;"&rt;
+  		Not a member? <a href="register.php"&rt;Sign up</a&rt;
+  	&lt;/p&rt;
+  &lt;/form&rt;
+&lt;/body&rt;
+&lt;/html&rt;```
