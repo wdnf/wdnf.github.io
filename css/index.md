@@ -2,8 +2,8 @@
 CSS - Cascading Style Sheets will allow you to design your websites.
 
 ## Suggested:
-[Centering an element in css](/article/center.html)
-[Placing text next to an image](/article/imageandtext.html)
+[Centering an element in css](/css/center.html)
+[Placing text next to an image](/css/imageandtext.html)
 
 ## Articles:
 
