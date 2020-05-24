@@ -28,6 +28,12 @@
 .hljs-attribute {
 	color: #be7e1e;
 }
+.hljs-number {
+	color: #1ebebb;
+}
+.hljs-built_in {
+	color: #970707;
+}
 
 .hljs-deletion,
 .hljs-number,
