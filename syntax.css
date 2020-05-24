@@ -11,7 +11,7 @@
 }
 
 .hljs-comment {
-	color: #595959
+	color: #696969
 }
 
 .hljs-attribute,
@@ -35,7 +35,7 @@
 	color: #4b9b1c;
 }
 .hljs-selector-class { 
-	color: #1662e3;
+	color: #3672e9;
 }
 .hljs-deletion,
 .hljs-quote,
@@ -43,12 +43,12 @@
 .hljs-string,
 .hljs-template-tag,
 .hljs-type {
-	color: #800
+	color: #f02020;
 }
 
 .hljs-section,
 .hljs-title {
-	color: #800;
+	color: #f02020;
 	font-weight: 700
 }
 
