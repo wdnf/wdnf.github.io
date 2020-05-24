@@ -29,10 +29,13 @@
 	color: #be7e1e;
 }
 .hljs-number {
-	color: #1ebebb;
+	color: #be0909;
 }
 .hljs-built_in {
-	color: #970707;
+	color: #be0909;
+}
+.hljs-selector-class { 
+	color: 
 }
 
 .hljs-deletion,
