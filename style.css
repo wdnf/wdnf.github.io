@@ -570,4 +570,4 @@ h4 {
 .ad--horizontal {
   border: 2px solid var(--color-primary);
   background: var(--color-negative-strong);
-  min-height: 2rem; }
+  min-height: 1rem; }
