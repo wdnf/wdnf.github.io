@@ -1,4 +1,4 @@
-# Creating a element using JS
+# Creating a element using JavaScript
 
 Firstly, create a variable that will contain our new element.
 ```js

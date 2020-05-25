@@ -1,4 +1,4 @@
-# Selecting elements using JS
+# Selecting elements in JavaScript
 
 ## Selecting a single element
 Methods listed below will return an HTML element's object.

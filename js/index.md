@@ -1,12 +1,12 @@
-# JS
+# JavaScript
 JS - JavaScript is a scripting language for web applications.
 
 ## Articles:
 
 ### Basics
-[Variables](variables.html)
-[Functions](functions.html)
-[Classes](classes.html)
+[Variables](fundamentals/variables.html)
+[Functions](fundamentals/functions.html)
+[Classes](fundamentals/classes.html)
 
 ### DOM
 [Creating element](dom/createelement.html)  

@@ -1,4 +1,4 @@
-# Editing a element using JS
+# Editing a element using JavaScript
 
 ## Editing the element's content
 
