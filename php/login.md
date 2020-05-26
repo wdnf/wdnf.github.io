@@ -32,7 +32,7 @@ The **post** method sends the data from the form to the **server.php** file, whi
   session_start();
   $db = mysqli_connect(SERVER, USERNAME, PASSWORD, DATABASE_NAME);
 ```
-`session_start()` starts a <a href="https://www.php.net/manual/en/book.session.php" target="_blank">PHP Session</a>., `mysqli_connect()` is what connects and selects the database to use for the rest of the code. `SERVER` represents the server name, usually `localhost`. `USERNAME` is the username of the MySQL user. `PASSWORD` is the password for the MySQL user. `DATABASE_NAME` is the name of the database owned by the MySQL user.
+`session_start()` starts a <a href="https://www.php.net/manual/en/book.session.php" target="_blank">PHP Session</a>. `mysqli_connect()` is what connects and selects the database to use for the rest of the code. `SERVER` represents the server name, usually `localhost`. `USERNAME` is the username of the MySQL user. `PASSWORD` is the password for the MySQL user. `DATABASE_NAME` is the name of the database owned by the MySQL user.
 ```php
   $db = mysqli_connect(SERVER, USERNAME, PASSWORD, DATABASE_NAME);
   if (isset($_POST['login_user'])) {
