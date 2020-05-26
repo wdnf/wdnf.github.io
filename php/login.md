@@ -34,6 +34,7 @@ The **post** method sends the data from the form to the **server.php** file, whi
 ```
 `session_start()` starts a <a href="https://www.php.net/manual/en/book.session.php" target="_blank">PHP Session</a>. `mysqli_connect()` is what connects and selects the database to use for the rest of the code. `SERVER` represents the server name, usually `localhost`. `USERNAME` is the username of the MySQL user. `PASSWORD` is the password for the MySQL user. `DATABASE_NAME` is the name of the database owned by the MySQL user.
 ```php
+  session_start();
   $db = mysqli_connect(SERVER, USERNAME, PASSWORD, DATABASE_NAME);
   if (isset($_POST['login_user'])) {
     $email = mysqli_real_escape_string($db, $_POST['email']);
@@ -42,6 +43,7 @@ The **post** method sends the data from the form to the **server.php** file, whi
 ```
 `if (isset($_POST['login_user']))` checks to make sure the "Login" button was clicked before accessing `server.php`. `mysqli_real_escape_string()` escapes the inputted strings for `$_POST['email']` and `$_POST['password']` in case the user inputted any malicious content.
 ```php
+  session_start();
   $db = mysqli_connect(SERVER, USERNAME, PASSWORD, DATABASE_NAME);
   if (isset($_POST['login_user'])) {
     $email = mysqli_real_escape_string($db, $_POST['email']);
@@ -57,6 +59,7 @@ The **post** method sends the data from the form to the **server.php** file, whi
 ```
 `md5($password)` hashes the password in MD5 format. This isn't the most secure option, so you might want to look into other hashing methods for later. I won't be explaining the SQL in this tutorial, you can learn that using other tutorials. `mysqli_query($db, $query)` executes the SQL on the webpage. `mysqli_fetch_assoc($results)` converts the output into an array. We can now use `$row['column']` to get something from the database. 
 ```
+  session_start();
   $db = mysqli_connect(SERVER, USERNAME, PASSWORD, DATABASE_NAME);
   if (isset($_POST['login_user'])) {
     $email = mysqli_real_escape_string($db, $_POST['email']);
