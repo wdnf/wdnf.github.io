@@ -50,7 +50,7 @@ The **post** method sends the data from the form to the **server.php** file, whi
     $password = mysqli_real_escape_string($db, $_POST['password']);
     $password = md5($password);
     $query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
-  	$results = mysqli_query($db, $query);
+    $results = mysqli_query($db, $query);
     $row = mysqli_fetch_assoc($results);
     $username = $row['username'];
     $email = $row['email'];
