@@ -48,7 +48,7 @@ The **post** method sends the data from the form to the **server.php** file, whi
   if (isset($_POST['login_user'])) {
     $email = mysqli_real_escape_string($db, $_POST['email']);
     $password = mysqli_real_escape_string($db, $_POST['password']);
-    $password = md5($password);
+    $password = password_hash($password, PASSWORD_DEFAULT);
     $query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
     $results = mysqli_query($db, $query);
     $row = mysqli_fetch_assoc($results);
@@ -57,14 +57,14 @@ The **post** method sends the data from the form to the **server.php** file, whi
     $id = $row['id'];
   }
 ```
-`md5($password)` hashes the password in MD5 format. This isn't the most secure option, so you might want to look into other hashing methods for later. I won't be explaining the SQL in this tutorial, you can learn that using other tutorials. `mysqli_query($db, $query)` executes the SQL on the webpage. `mysqli_fetch_assoc($results)` converts the output into an array. We can now use `$row['column']` to get something from the database. 
+`password_hash($password, PASSWORD_DEFAULT)` hashes the password in a secure format. I won't be explaining the SQL in this tutorial, you can learn that using other tutorials. `mysqli_query($db, $query)` executes the SQL on the webpage. `mysqli_fetch_assoc($results)` converts the output into an array. We can now use `$row['column']` to get something from the database. 
 ```
   session_start();
   $db = mysqli_connect(SERVER, USERNAME, PASSWORD, DATABASE_NAME);
   if (isset($_POST['login_user'])) {
     $email = mysqli_real_escape_string($db, $_POST['email']);
     $password = mysqli_real_escape_string($db, $_POST['password']);
-    $password = md5($password);
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
     $query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
     $results = mysqli_query($db, $query);
     $row = mysqli_fetch_assoc($results);
@@ -73,15 +73,17 @@ The **post** method sends the data from the form to the **server.php** file, whi
     $id = $row['id'];
     
     if (mysqli_num_rows($results) == 1) {
-      $_SESSION['username'] = $username;
-      $_SESSION['email'] = $email;
-      $_SESSION['id'] = $id;
-      $_SESSION['success'] = "You are now logged in";
-      $_SESSION['loggedin'] = true;
-      header('Location: index.php');
+      if (password_verify($password, $hashed_password)) {
+        $_SESSION['username'] = $username;
+        $_SESSION['email'] = $email;
+        $_SESSION['id'] = $id;
+        $_SESSION['success'] = "You are now logged in";
+        $_SESSION['loggedin'] = true;
+        header('Location: index.php');
+      }
     }
   }
 ```
-`if (mysqli_num_rows($results) == 1)` checks to make sure exactly one user was given from the MySQL query. `$_SESSION['username'] = $username` sets the session variable `username` to the users username in the database. This can later be accessed by other pages. The same goes for the other variables. `header('Location: index.php')` redirects the user to the index page after the PHP is run.
+`if (mysqli_num_rows($results) == 1)` checks to make sure exactly one user was given from the MySQL query. `if (password_verify($password, $hashed_password))` checks if the non-hashed password is the same hashed as in the database. `$_SESSION['username'] = $username` sets the session variable `username` to the users username in the database. This can later be accessed by other pages. The same goes for the other variables. `header('Location: index.php')` redirects the user to the index page after the PHP is run.
 
 **You have finished *Part 1* of this lesson! *Part 2* will be out shortly!**
