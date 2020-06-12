@@ -2,18 +2,19 @@
 CSS - Cascading Style Sheets will allow you to design your websites.
 
 ## Suggested:
-[Centering an element in css](/css/center.html)     
-[Placing text next to an image](/css/imageandtext.html)
+[Centering an element in css](/css/positioning/center.html)     
+[Placing text next to an image](/css/positioning/imageandtext.html)
+[Positioning elements using Flex or Grid technology in CSS](/css/positioning/)  
 
 ## Articles:
 
 ### Positioning
-[Flex](flex.html)  
-[Grid](grid.html)  
+[Flex](/css/positioning/flex.html)  
+[Grid](/css/positioning/grid.html)  
 
 ### Borders and outlines
-[Border](border.html)  
-[Outline](outline.html)  
+[Border](/css/styling/border.html)  
+[Outline](/css/styling/outline.html)  
 
 ### Lists
-will be added l8r
+[List](/css/styling/list.html)  
