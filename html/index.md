@@ -4,7 +4,7 @@ HTML - Hyper Text Markup Language is basic markup language needed to code a webs
 ## Articles:
 
 ### Structure
-[Basic HTML structure](structure.html)
+[Basic HTML structure](/html/fundementals/structure.html)
 
 ### Tags
 [Adding image into HTML](/html/tags/image.html)
