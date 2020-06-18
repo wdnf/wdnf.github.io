@@ -8,6 +8,7 @@ HTML - Hyper Text Markup Language is basic markup language needed to code a webs
 
 ### Tags
 [Adding image into HTML](/html/tags/image.html)
+[Style tag](/html/tags/styletag.md)
 
 ### SEO
 [Embed card with a image](/html/seo/embedcard.html)
