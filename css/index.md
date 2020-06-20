@@ -14,7 +14,8 @@ CSS - Cascading Style Sheets will allow you to design your websites.
 [Flex](/css/positioning/flex.html)  
 [Grid](/css/positioning/grid.html)
 [Positioning elements using Flex or Grid technology in CSS](/css/positioning/)
-[Centering an element in css](/css/positioning/center.html)     
+[Centering an element in css](/css/positioning/center.html)
+[Position property](/css/positioning/position.html)
 [Placing text next to an image](/css/positioning/imageandtext.html)
 
 ### Borders and outlines
