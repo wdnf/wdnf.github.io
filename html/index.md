@@ -4,11 +4,11 @@ HTML - Hyper Text Markup Language is basic markup language needed to code a webs
 ## Articles:
 
 ### Structure
-[Basic HTML structure](/html/fundamentals/structure.html)
+[Basic HTML structure](/html/fundamentals/structure.html)  
 
 ### Tags
-[Adding image into HTML](/html/tags/image.html)
+[Adding image into HTML](/html/tags/image.html)  
 
 ### SEO
-[Embed card with a image](/html/seo/embedcard.html)
+[Embed card with a image](/html/seo/embedcard.html)  
 
