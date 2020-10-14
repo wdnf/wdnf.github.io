@@ -16,7 +16,7 @@ html {
   /* So you will be able to use 1rem as 10px in whole document for any element*/
   font-size: 62.5%;
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace; }
+  font-family: 'Ubuntu', sans-serif; }
 
 /* Custom CSS */
 :root {
@@ -473,6 +473,8 @@ h4 {
     display: none; }
   .nav__item {
     padding: 1rem 3vw; }
+    .nav__item > a {
+      text-decoration: none; }
   .nav #nav__toggle-checkbox {
     display: none; }
     .nav #nav__toggle-checkbox:checked ~ .nav__content {

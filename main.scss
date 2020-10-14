@@ -22,7 +22,7 @@ html
   /* So you will be able to use 1rem as 10px in whole document for any element*/
   font-size: 62.5%;
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* Custom CSS */
@@ -593,7 +593,11 @@ h4
 
     &__item
     {
-        padding: 1rem 3vw;
+		padding: 1rem 3vw;
+		
+		& > a {
+			text-decoration: none;
+		}
     }
 
     /* NAV CHECKBOX HACK */
