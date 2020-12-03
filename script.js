@@ -4,13 +4,20 @@ let images = document.querySelectorAll(":not(a) > img");
 
 images.forEach(function(img) {
 
-        img.addEventListener("click", function(e) {
+        img.addEventListener("click", (e) => {
+
 
             let modal = document.querySelector("#modal-image");
 
             if(!isModalOpen(modal)) {
                 let imagetitle = document.querySelector("#modal-image-name");
                 let imagepreview = document.querySelector("#modal-image-element");
+
+                if(img.classList.contains("qr")) {
+                    imagepreview.classList.add("qr");
+                } else {
+                    imagepreview.classList.remove("qr");
+                }
     
                 imagetitle.innerText = e.target.getAttribute("alt");
                 imagepreview.src = e.target.src;
@@ -33,6 +40,14 @@ function closeModal(modal) {
 
 }
 
+function clickCloseModal(modal) {
+    
+
+
+
+    modal.removeEventListener("click", () => clickCloseModal());
+}
+
 
 function toggleModal(modal) {
 
@@ -42,7 +57,8 @@ function toggleModal(modal) {
 
     if(isModalOpen(modal)) {
         
-        modal.addEventListener("click", console.log("Executed"))
+        let background = document.querySelector(".modal :not(.modal-foreground)");
+        background.addEventListener("click", () => clickCloseModal(modal));
 
     }
 
