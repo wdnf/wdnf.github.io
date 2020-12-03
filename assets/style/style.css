@@ -216,7 +216,7 @@ hr {
 .modal-foreground {
     display: flex;
     flex-direction: column;
-    
+
     background-color: var(--color-negative);
     margin: 2rem 4rem;
     min-width: 70vw;
@@ -279,6 +279,15 @@ hr {
     justify-content: center;
     justify-self: center;
     align-content: center;
+
+
+    @nest & > address {
+        display: flex;
+        border-radius: .4rem;
+        margin: 1rem;
+        border: .4rem solid transparent;
+        transition: all .3s;
+    }
 }
 
 .crypto-addresses > address {
