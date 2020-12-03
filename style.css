@@ -112,24 +112,34 @@ h4 {
   .nav__item {
     padding: 2rem 3vw; }
     .nav__item > a {
-      text-decoration: none; }
-  .nav #nav__toggle-checkbox {
-    display: none; }
-    .nav #nav__toggle-checkbox:checked ~ .nav__content {
+      text-decoration: none;
+}
+
+.nav #nav__toggle-checkbox {
+    display: none;
+}
+
+.nav #nav__toggle-checkbox:checked ~ .nav__content {
       flex-direction: column;
-      visibility: visible; }
-  .nav__toggle-bars {
+      visibility: visible;
+}
+
+.nav__toggle-bars {
     height: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; }
-    .nav__toggle-bars > hr {
-      content: "";
-      display: flex;
-      width: 3rem;
-      height: .5rem;
-      border-radius: .2rem;
-      background-color: var(--color-primary); }
+    justify-content: space-evenly;
+}
+
+.nav__toggle-bars > hr {
+    content: "";
+    display: flex;
+    width: 3rem;
+    height: .5rem;
+    border-radius: .2rem;
+    margin: 0;
+    background-color: var(--color-primary);
+}
 
 @media only screen and (max-width: 37.5em) {
   .nav__toggle {
@@ -200,7 +210,7 @@ hr {
       cursor: not-allowed;
 }
 
-.grid__image {
+.grid__item .grid__image {
     width: 100%;
     max-width: unset;
     height: 15rem;
@@ -209,7 +219,7 @@ hr {
     z-index: 4;
     transition: all .3s;
 }
-.grid__image--contain {
+.grid__item .grid__image--contain {
       object-fit: contain;
 }
 
