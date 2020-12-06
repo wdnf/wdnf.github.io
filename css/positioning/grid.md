@@ -7,4 +7,4 @@ Grid allows you to create amazing table-like layouts easily.
 }
 ```
 
-## [Positioning elements using Flex or Grid technology in CSS](positioning.html)
+## [Positioning elements using Flex or Grid technology in CSS](index.html)

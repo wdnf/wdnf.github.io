@@ -23,4 +23,4 @@ Values marked with `-reverse` will reverse the order of child elements in the fl
 }
 ```
 
-## [Positioning elements using Flex or Grid technology in CSS](positioning.html)  
+## [Positioning elements using Flex or Grid technology in CSS](index.html)  
