@@ -242,7 +242,6 @@ hr {
 .grid {
   display: grid;
   grid-auto-flow: row;
-  grid-auto-rows: minmax(10rem, 18rem);
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   padding: 3rem;
   grid-gap: 3rem;
