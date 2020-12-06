@@ -199,24 +199,27 @@ hr {
 .modal {
     visibility: hidden;
     opacity: 0;
-    display: none;
-    transition: all .3s;
-
+    transition: all .3s ease-out;
+    transform: scale(0) skew(10deg, 10deg) translate(-50%, -50%);
     z-index: 420;
 
     position: fixed;
-    width: 100%;
+    top: 50%;
+    left: 50%;
+    width: 0%;
     height: 100%;
-    backdrop-filter: blur(1rem);
     
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .modal--open {
-    visibility: visible;
-    opacity: 1;
-    display: flex;
+  width: 100%;
+  transform: scale(1) skew(0deg, 0deg) translate(-50%, -50%);
+  visibility: visible;
+  opacity: 1;
+  backdrop-filter: blur(1rem);
 }
 
 .modal-foreground {
@@ -230,6 +233,10 @@ hr {
     padding: 5rem;
     min-width: 70vw;
     min-height: 60vh;
+}
+
+.modal-foreground img {
+  max-height: 50vh;
 }
 
 .grid {
