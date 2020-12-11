@@ -1,3 +1,5 @@
+hljs.initHighlightingOnLoad();
+
 const images = document.querySelectorAll(":not(a) > img");
 const modal = document.querySelector("#modal-image");
 const modalTitle = document.querySelector("#modal-image-name");
